@@ -14,6 +14,19 @@
 <div class="container">
     <div class="header_container">
         <nav class="header_menu menu">
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav_menu" id="navMenu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Правила</a></li>
+                <li><a href="#">Номера</a></li>
+                <li><a href="#">Новости</a></li>
+            </ul>
             <div class="menu_column">
                 <ul class="menu_list">
                     <li class="menu_item"><a href="#" class="menu_link main">Главная</a></li>
@@ -516,6 +529,38 @@
     // Прокрутка вверх при клике
     scrollTopBtn.addEventListener("click", function() {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth"})});
+
+
+    // КНОПКА БУРГЕР
+    document.addEventListener('DOMContentLoaded', function (){
+        const burger = document.getElementById('burger');
+        const navMenu = document.getElementById('navMenu');
+
+        burger.addEventListener('click', function () {
+            burger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+
+            document.body.style.overflow = navMenu.classList.contains
+            ('active') ? 'hidden' : '';
+        });
+
+        const navLinks = document.querySelectorAll('.nav_menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (){
+                burger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+        document.addEventListener('click', function (e) {
+            if(!navMenu.contains(e.target) && !burger.contains(e.target)
+            && navMenu.classList.contains('active')) {
+                burger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
 </script>
 
 </body>
