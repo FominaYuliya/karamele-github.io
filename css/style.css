@@ -267,7 +267,7 @@ h2{
 .cards-about-us button, .reviews-cards button{
     width: 3rem;
     height: 3rem;
-    background: #f1f1f1;
+    background: #ffffff;
     font-size: 2rem;
     box-shadow: 0 1rem 2rem rgba(0,0,0,.8);
     position: absolute;
@@ -581,9 +581,17 @@ i img, li a img{
     margin-right: 3%;
 }
 /*-----------МЕДИА-ЗАПРОСЫ-------------------------------*/
-@media (max-width: 768px){
-    nav .header_menu{
-        flex-direction: column;
+@media (max-width: 767px){
+    html{
+        font-size: 70%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+@media (min-width: 1024px){
+    header{
+        height: 90%;
     }
 }
 
