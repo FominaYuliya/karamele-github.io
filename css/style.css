@@ -92,6 +92,22 @@ main{
     font-family: Impact,sans-serif;
     font-size: 1.5vw;
 }
+.burger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+.burger span{
+    width: 25px;
+    height: 3px;
+    background: #600909;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+.nav_menu{
+    display: none;
+}
 .header_menu{
     display: flex;
     align-items: center;
@@ -226,8 +242,8 @@ main{
         opacity: 1;
     }
     100% {
-        width: 600px;
-        height: 600px;
+        width: 300px;
+        height: 300px;
         opacity: 0;
     }
 }
@@ -584,6 +600,68 @@ i img, li a img{
 @media (max-width: 767px){
     html{
         font-size: 70%;
+    }
+    .menu_column{
+        display: none;
+    }
+    .burger{
+        display: flex;
+    }
+    .nav_menu{
+        display: flex;
+        position: fixed;
+        top: -110%;
+        left: 0;
+        width: 30%;
+        height: 25vh;
+        background: #600909;
+        flex-direction: column;
+        box-shadow: -2px 0 10px bisque;
+        transition: top 0.3s;
+        font-size: 14px;
+    }
+    .nav_menu.active a{
+        color: #efbc91;
+        margin: 0 10%;
+    }
+    .nav_menu.active a:hover{
+        color: #ef9014;
+    }
+    .nav_menu.active li{
+
+        margin-bottom: 10px;
+    }
+    .nav_menu.active{
+        top: 0;
+        left: 10px;
+        padding: 5%;
+    }
+    .burger.active span:nth-child(1){
+        transform: rotate(-45deg) translate(-5px 6px);
+    }
+    .burger.active span:nth-child(2){
+        opacity: 0;
+    }
+    .burger.active span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px 6px);
+    }
+    @keyframes ring {
+        0% {
+            width: 30px;
+            height: 30px;
+            opacity: 1;
+        }
+        100% {
+            width: 100px;
+            height: 100px;
+            opacity: 0;
+        }
+    }
+    .overlay h3{
+        font-size: 1.2vw;
+    }
+    .overlay .btn{
+        font-size: 1.2vw;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px){
