@@ -665,12 +665,15 @@ i img, li a img{
             opacity: 0;
         }
     }
+    .overlay {
+        padding: 0px;
+    }
     .overlay h3{
         font-size: 1.2vw;
     }
     .overlay .btn{
         font-size: 1.2vw;
-        padding: 3px 0;
+        padding: 5px;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px){
