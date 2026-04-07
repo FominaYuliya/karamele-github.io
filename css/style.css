@@ -596,6 +596,14 @@ i img, li a img{
 .col .links li a img{
     margin-right: 3%;
 }
+/*-----------СВАЙПЕР-------------------------------------*/
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+.row{
+    display: flex;
+}
 /*-----------МЕДИА-ЗАПРОСЫ-------------------------------*/
 @media (max-width: 767px){
     html{
@@ -662,6 +670,7 @@ i img, li a img{
     }
     .overlay .btn{
         font-size: 1.2vw;
+        padding: 5px;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px){
