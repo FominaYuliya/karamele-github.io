@@ -2,6 +2,7 @@
 @import "./../fonts/playfairdisplay/playfair.css";
 @import "./../fonts/roboto/roboto.css";
 @import "./../fonts/Impact/stylesheet.css";
+
 /*-----------ОБНУЛЕНИЕ СТИЛЕЙ-----------------------------------------------------------------*/
 
 *{
@@ -406,7 +407,7 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 10%;
     transition: height 0.5s;
     }
 .overlay h3{
@@ -597,12 +598,29 @@ i img, li a img{
     margin-right: 3%;
 }
 /*-----------СВАЙПЕР-------------------------------------*/
-.swiper {
+.slider{
+background: #333333;
+}
+.swiper-gallery {
     width: 600px;
-    height: 300px;
+    height: 600px;
+    background: #333333;
+    margin-bottom: 15px;
+}
+.swiper-thumbs{
+    width: 600px;
+    background: #333333;
 }
 .row{
     display: flex;
+}
+.swiper-slide img{
+    max-width: 100%;
+
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
 }
 /*-----------МЕДИА-ЗАПРОСЫ-------------------------------*/
 @media (max-width: 767px){
@@ -665,8 +683,8 @@ i img, li a img{
             opacity: 0;
         }
     }
-    .overlay {
-        padding: 0px;
+    .overlay{
+        padding: 0;
     }
     .overlay h3{
         font-size: 1.2vw;
