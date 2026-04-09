@@ -70,7 +70,7 @@ body {
     margin: 0 auto;
     padding: 0 3%;
 }
-header{
+header {
      width: 100%;
      background-image: url("../img/header.jpg");
      background-size: cover;
@@ -138,6 +138,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-basis: 28%;
+    margin-top: 2%;
 }
 .header_links{
        margin: 0 0 5% 0;
@@ -621,6 +623,31 @@ background: #333333;
 .swiper-slide{
     display: flex;
     justify-content: center;
+}
+.contact li{
+    padding: 1% 0;
+}
+.contact li a{
+    display: flex;
+    align-items: center;
+}
+
+.contact li span{
+    font-size: 1.3vw;
+    color: #520707;
+    padding: 0 0 0 5%;
+
+}
+.contact li span:hover{
+    color: #ef9014;
+}
+.header-page{
+    background: #e19f6c;
+    width: 100%;
+    margin-bottom: 3%;
+}
+.swiper-content{
+    margin-left: 3%;
 }
 /*-----------МЕДИА-ЗАПРОСЫ-------------------------------*/
 @media (max-width: 767px){
