@@ -615,6 +615,7 @@ background: #333333;
 }
 .row{
     display: flex;
+    margin-bottom: 3%;
 }
 .swiper-slide img{
     max-width: 100%;
@@ -648,6 +649,48 @@ background: #333333;
 }
 .swiper-content{
     margin-left: 3%;
+    color: #171616;
+}
+.swiper-content h2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.slip-place{
+    background: #f3caad;
+    border-radius: 5%;
+    margin: 3% 0 0 0;
+    padding: 5%;
+}
+.slip-place h3{
+    color: #520707;
+    font-size: 150%;
+}
+.slip-name{
+    color: #520707;
+    margin-bottom: 4%;
+    font-size: 105%;
+}
+.slip-place img{
+    width: 48px;
+    margin-right: 4%;
+}
+.slip-content{
+    display: flex;
+
+}
+.slip-content-col1-row1, .slip-content-col2-row1{
+    display: flex;
+    align-items: center;
+
+}
+.slip-content h4{
+    margin-right: 4%;
+}
+.col{
+    margin-right: 5%;
+}
+.row{
+    margin-bottom: 2%;
 }
 /*-----------МЕДИА-ЗАПРОСЫ-------------------------------*/
 @media (max-width: 767px){
