@@ -600,23 +600,28 @@ i img, li a img{
     margin-right: 3%;
 }
 /*-----------СВАЙПЕР-------------------------------------*/
+.row-container{
+    display: flex;
+    margin-bottom: 3%;
+    /*flex-wrap: wrap;*/
+
+}
 .slider{
-background: #333333;
+    background: #333333;
 }
 .swiper-gallery {
     width: 600px;
     height: 600px;
     background: #333333;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .swiper-thumbs{
     width: 600px;
     background: #333333;
 }
-.row{
-    display: flex;
-    margin-bottom: 3%;
-}
+
 .swiper-slide img{
     max-width: 100%;
 
@@ -650,18 +655,30 @@ background: #333333;
 .swiper-content{
     margin-left: 3%;
     color: #171616;
+
 }
 .swiper-content h2{
     text-align: center;
     margin-bottom: 5%;
+    font-size: 160%;
 }
-.slip-place{
+.p-content{
+    font-size: 110%;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 10%;
+}
+.p-content span{
+    color: #af3c1f;
+    font-size: 115%;
+}
+.slip-place, .conveniences{
     background: #f3caad;
     border-radius: 5%;
     margin: 3% 0 0 0;
     padding: 5%;
 }
-.slip-place h3{
+.slip-place h3, .conveniences h3{
     color: #520707;
     font-size: 150%;
 }
@@ -670,7 +687,7 @@ background: #333333;
     margin-bottom: 4%;
     font-size: 105%;
 }
-.slip-place img{
+.slip-place img, .conveniences img{
     width: 48px;
     margin-right: 4%;
 }
