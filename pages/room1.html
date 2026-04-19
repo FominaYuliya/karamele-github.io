@@ -17,6 +17,7 @@
             crossorigin="anonymous"></script>-->
 </head>
 <body>
+
 <div class="header-page">
     <div class="container">
         <div class="header_container">
@@ -120,10 +121,39 @@
 
         </div>
         <div class="swiper-content">
+<div class="reserve-action">
+    <button class="reserve-btn tel">
+        <a href="tel:+79900081499">Забронировать</a>
+    </button>
+    <button id="openModal" class="reserve-btn tel-pk">
+        <a href="#">Забронировать</a>
+
+    </button>
+    <!-- Модальное окно -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-window">
+            <div class="modal-header">
+                <h3>Заголовок модального окна</h3>
+                <span class="close-btn" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-content">
+                <p>Здесь размещается содержимое модального окна. Это может быть текст,
+                    изображения, формы и другие элементы.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary">Подтвердить</button>
+                <button class="btn-secondary" id="cancelModal">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="write-btn">
+        <a href="https://vk.ru/im/convo/-226232248?entrypoint=community_page&tab=all" target="_blank">Написать в
+            <img src="../icon/i-vk.png" alt="Vk"></a>
+    </button>
+</div>
+
             <h2>Трёхместный номер Cтандарт</h2>
-            <button>
-                <a href="tel:+79900081499">Позвонить</a>
-            </button>
             <p class="p-content"> <span>Номер Cтандарт</span> на 3 человека. В номере площадью 14 м2 есть все необходимое
                 для удобного проживания. Двуспальная кровать и кресло-кровать, постельное бельё,
                 шкаф, тумбочка, санузел с душем, круглосуточно холодная и горячая вода,
