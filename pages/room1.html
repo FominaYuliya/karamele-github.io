@@ -17,7 +17,30 @@
             crossorigin="anonymous"></script>-->
 </head>
 <body>
-
+<!-- Модальное окно -->
+<div id="modalOverlay" class="modal-overlay">
+    <div class="modal-window">
+        <div class="modal-header">
+            <h3>Бронирование номера</h3>
+            <span class="close-btn" id="closeModal">&times;</span>
+        </div>
+        <div class="modal-content">
+            <p class="p">Забронировать номер можно одним из следующих способов:</p>
+            <ul class="reserve-list">
+                <li>Позвонив по номеру телефона <span>+7(990) 026 50 08</span>, Елена</li>
+                <li>Написав нам в Телеграмм на номер <span>+7(990) 026 50 08</span>, Елена
+                    <p><button><a href="https://t.me/MechevaElena" class="telegram-link" target="_blank">Написать в Telegram</a></button></p></li>
+                <li>Написав нам в МАХ на номер <span>+7(990) 026 50 08</span>, Елена
+                    <p><button><a href="https://max.ru/u/ВАШ_ХЕШИ" class="max-link" target="_blank">Написать в MAX</a></button></p></li>
+                <li>Написав нам в ВКонтакте в сообществе База отдыха "Карамель" в личные сообщения
+                    <p><button><a href="https://vk.ru/im/convo/-226232248?entrypoint=community_page&tab=all" class="vk-link" target="_blank">Написать в Vk</a></button></p></li>
+            </ul>
+        <div class="modal-footer">
+            <button class="btn-secondary" id="cancelModal">OK</button>
+        </div>
+    </div>
+</div>
+</div>
 <div class="header-page">
     <div class="container">
         <div class="header_container">
@@ -129,23 +152,7 @@
         <a href="#">Забронировать</a>
 
     </button>
-    <!-- Модальное окно -->
-    <div id="modalOverlay" class="modal-overlay">
-        <div class="modal-window">
-            <div class="modal-header">
-                <h3>Заголовок модального окна</h3>
-                <span class="close-btn" id="closeModal">&times;</span>
-            </div>
-            <div class="modal-content">
-                <p>Здесь размещается содержимое модального окна. Это может быть текст,
-                    изображения, формы и другие элементы.</p>
-            </div>
-            <div class="modal-footer">
-                <button class="btn-primary">Подтвердить</button>
-                <button class="btn-secondary" id="cancelModal">Отмена</button>
-            </div>
-        </div>
-    </div>
+
 
     <button class="write-btn">
         <a href="https://vk.ru/im/convo/-226232248?entrypoint=community_page&tab=all" target="_blank">Написать в
@@ -191,30 +198,30 @@
                 <h3>Основные удобства</h3>
                 <div class="row">
                     <div class="col">
-                        <img src="../icon/кондиционер.png" alt="">
+                        <img class="udobstva" src="../icon/кондиционер.png" alt="">
                         <p>Кондиционер</p>
                     </div>
                     <div class="col">
-                    <img src="../icon/wi-fi.png" alt="">
+                    <img class="udobstva" src="../icon/wi-fi.png" alt="">
                     <p>Беспроводной интернет Wi-Fi</p>
                     </div>
                     <div class="col">
-                    <img src="../icon/тв.png" alt="">
+                    <img class="udobstva" src="../icon/тв.png" alt="">
                     <p>Телевизор</p>
                     </div>
                     <div class="col">
-                    <img src="../icon/чайник.png" alt="">
+                    <img class="udobstva" src="../icon/чайник.png" alt="">
                     <p>Электрический чайник</p>
                     </div>
                     <div class="col">
-                    <img src="../icon/микроволновка.png" alt="">
+                    <img class="udobstva" src="../icon/микроволновка.png" alt="">
                     <p>Микроволновка</p>
                     </div>
                 </div>
                 <div class="blok row">
                     <div class="kitchen-blok row">
                         <div class="kitchen col">
-                            <img src="../icon/кухонная%20зона.png" alt="">
+                            <img class="udobstva" src="../icon/кухонная%20зона.png" alt="">
                             <p>Кухонная зона:</p>
                         </div>
                         <div class="kitchen-content">
@@ -234,7 +241,7 @@
                     </div>
                     <div class="bathroom-blok row">
                         <div class="bathroom col">
-                            <img src="../icon/ванная%20комната.png" alt="">
+                            <img class="udobstva" src="../icon/ванная%20комната.png" alt="">
                             <p>Ванная комната:</p>
                         </div>
                         <div class="bathroom-content">
@@ -304,6 +311,8 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="../js/main.js"></script>
+<script src="../js/burger-menu.js"></script>
+<script src="../js/room.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
