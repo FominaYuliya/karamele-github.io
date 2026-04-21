@@ -71,11 +71,11 @@ body {
     padding: 0 3%;
 }
 header {
-     width: 100%;
-     background-image: url("../img/header.jpg");
-     background-size: cover;
+    width: 100%;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
 
- }
+}
 main{
 
 }
@@ -123,7 +123,7 @@ main{
     margin: 0 14% 0 0;
 }
 .menu_list li{
-   margin: 0 0 14% 0;
+    margin: 0 0 14% 0;
 }
 .header_logo{
     display: flex;
@@ -146,7 +146,7 @@ main{
     margin-top: 2%;
 }
 .header_links{
-       margin: 0 0 5% 0;
+    margin: 0 0 5% 0;
 }
 .action-header_link{
     color: #600909;
@@ -270,7 +270,7 @@ h2{
     align-items: center;
 
 
- }
+}
 .about-img{
     max-width: 100%;
     object-fit: cover;
@@ -325,7 +325,7 @@ h2{
     overflow: hidden;
     width: 100%;
     /*height: 25rem;*/
-    }
+}
 .card img{
     width: 25%;
     height: auto;
@@ -356,7 +356,7 @@ h2{
     justify-content: center;
     margin-top: 2%;
 
- }
+}
 .map h2{
     margin-top: 0;
 
@@ -415,7 +415,7 @@ h2{
     flex-direction: column;
     padding: 0 10%;
     transition: height 0.5s;
-    }
+}
 .overlay h3{
     font-weight: 500;
     margin-bottom: 5px;
@@ -607,32 +607,50 @@ i img, li a img{
 .row-container{
     display: flex;
     margin-bottom: 3%;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
 
 }
 .slider{
-    background: #333333;
+
+    width: 50%;
 }
 .swiper-gallery {
-    width: 600px;
-    height: 600px;
+    width: 90%;
+    height: auto;
     background: #333333;
-    margin-bottom: 15px;
+
     display: flex;
     flex-direction: column;
 }
 .swiper-thumbs{
-    width: 600px;
+    width: 90%;
     background: #333333;
+    padding-bottom: 5%;
 }
 
 .swiper-slide img{
-    max-width: 100%;
+    max-width: 80%;
 
 }
 .swiper-slide{
     display: flex;
     justify-content: center;
+    width: 90%;
+    margin-top: 5%;
+}
+.swiper-thumbs .swiper-slide{
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+.swiper-thumbs .swiper-slide-thumb-active,
+.swiper-thumbs .swiper-slide:hover{
+    opacity: 1;
+}
+:root {
+    --swiper-navigation-size: 7%;
 }
 .contact li{
     padding: 1% 0;
@@ -660,6 +678,7 @@ i img, li a img{
 .swiper-content{
     margin-left: 3%;
     color: #171616;
+    width: 47%;
 
 }
 .swiper-content h2{
@@ -701,6 +720,7 @@ i img, li a img{
     display: flex;
     flex-wrap: wrap;
 
+
 }
 
 .slip-content h4{
@@ -720,7 +740,7 @@ i img, li a img{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
- }
+}
 .blok{
     display: flex;
     align-items: start;
@@ -729,6 +749,7 @@ i img, li a img{
     padding: 3%;
     font-size: 120%;
     background: #600909;
+    margin-bottom: 2%;
 }
 .reserve-btn a, .write-btn a{
     color: #f3caad;
@@ -868,9 +889,10 @@ i img, li a img{
     padding: 1%;
     background: #023af3;
     color: #efbc91;
+    margin-top: 2%;
 }
 .reserve-list button:hover{
-    background: #355be5;
+    background: #600909;
 }
 .reserve-list a{
     color: #ff6f00;
@@ -956,6 +978,30 @@ i img, li a img{
     li a img{
         width: 18px;
     }
+    .swiper-thumbs{
+        display: none;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
+    .slider{
+        width: 100%;
+        margin-bottom: 5%;
+
+    }
+    .swiper-gallery{
+        padding-bottom: 5%;
+    }
+    .swiper-content{
+        width: 100%;
+    }
+.write-btn a{
+    align-items: center;
+}
+    .write-btn a img{
+        padding-left: 10%;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 1023px){
 
@@ -965,7 +1011,6 @@ i img, li a img{
         height: 90%;
     }
 }
-
 
 
 
