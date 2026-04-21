@@ -19,6 +19,8 @@ swiperThumbs= new Swiper(".swiper-thumbs", {
 let swiperGallery;
 swiperGallery = new Swiper(".swiper-gallery", {
     spaceBetween: 10,
+    slidesPerView: 1,
+    centeredSlides: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -26,6 +28,19 @@ swiperGallery = new Swiper(".swiper-gallery", {
     thumbs: {
         swiper: swiperThumbs,
     },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1.7,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        992: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        },
+
+    }
 });
 
 
