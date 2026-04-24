@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../icon/adres.png"/>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Номер 12 Делюкс</title>
+    <!--<script
+            src="https://code.jquery.com/jquery-4.0.0.js"
+            integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+            crossorigin="anonymous"></script>-->
+</head>
+<body>
+<!-- Модальное окно -->
+<div id="modalOverlay" class="modal-overlay">
+    <div class="modal-window">
+        <div class="modal-header">
+            <h3>Бронирование номера</h3>
+            <span class="close-btn" id="closeModal">&times;</span>
+        </div>
+        <div class="modal-content">
+            <p class="p">Забронировать номер, а также получить ответы на интересующие Вас вопросы,
+                можно одним из следующих способов:</p>
+            <ul class="reserve-list">
+                <li>Позвонив по номеру телефона <span>+7(990) 026 50 08</span>, Елена</li>
+                <li>Написав нам в Телеграмм на номер <span>+7(990) 026 50 08</span>, Елена
+                    <p><button><a href="https://t.me/MechevaElena" class="telegram-link" target="_blank" rel="noopener noreferrer">Написать в Telegram</a></button></p></li>
+                <li>Написав нам в МАХ на номер <span>+7(990) 026 50 08</span>, Елена
+                    <p><button><a href="https://max.ru/u/f9LHodD0cOICDwa7ED-0-LJgo-IoxP3OaXtBW5uAKdVntUFBUeOaInLev7Q" class="max-link" target="_blank" rel="noopener noreferrer">Написать в MAX</a></button></p></li>
+                <li>Написав нам в ВКонтакте в сообществе База отдыха "Карамель" в личные сообщения
+                    <p><button><a href="https://vk.ru/im/convo/-226232248?entrypoint=community_page&tab=all" class="vk-link" target="_blank" rel="noopener noreferrer">Написать в Vk</a></button></p></li>
+            </ul>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="cancelModal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Модальное окно видео -->
+<div id="modalOverlayVideo" class="modal-overlay-video">
+    <div class="modal-window-video">
+
+        <div class="modal-content-video">
+            <video id="video" class="review-video" src="../video/video-12.mov" controls></video>
+            <span class="close-btn-video" id="closeModalVideo">&times;</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="header-page">
+    <div class="container">
+        <div class="header_container">
+            <nav class="header_menu menu">
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav_menu" id="navMenu">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Правила</a></li>
+                    <li><a href="#">Номера</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+                <div class="menu_column">
+                    <ul class="menu_list">
+                        <li class="menu_item"><a href="../index.html" class="menu_link main">Главная</a></li>
+                        <li class="menu_item"><a href="#" class="menu_link">Галерея</a></li>
+                    </ul>
+                </div>
+                <div class="menu_column">
+                    <ul class="menu_list">
+                        <li class="menu_item"><a href="#" class="menu_link">О нас</a></li>
+                        <li class="menu_item"><a href="#" class="menu_link">Правила</a></li>
+                    </ul>
+                </div>
+                <div class="menu_column">
+                    <ul class="menu_list">
+                        <li class="menu_item"><a href="#" class="menu_link">Номера</a></li>
+                        <li class="menu_item"><a href="#" class="menu_link">Новости</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header_logo">
+                <img class="header_logo_img" src="../img/main_logo.png" alt="logo">
+            </div>
+            <div class="header_action">
+                <div class="header_links">
+                    <!--**<a href="#" class="action-header_link">Войти</a>
+                    <a href="#" class="action-header_link">Зарегистрироваться</a>**-->
+                    <ul class="links contact">
+                        <li><a href="tel:+79900081499"><img src="../icon/phone_blue_35145.png" alt="->"><span>+7 (990)-026-50-08</span></a></li>
+                        <li><a href="https://yandex.ru/maps/?ll=36.823048%2C46.689343&z=18&pt=36.823048,46.689343,pm2rdm&l=map" target="_blank" rel="noopener noreferrer"><img src="../icon/adres.png" alt="->"><span>г. Бердянск, ул. Макарова, 11Р</span></a></li>
+                    </ul>
+                </div>
+                <!--**<button class="action-header_button"><span>Контакты</span></button>**-->
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<main>
+    <div class="container row-container">
+        <div class="slider">
+            <div class="swiper swiper-gallery">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="../img/rooms/№12/room12.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/rooms/№12/photo_2024-06-07_10-11-25.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/rooms/№12/photo_2024-06-07_10-13-04.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/rooms/№12/photo_2024-06-07_10-13-13.jpg" alt="">
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper swiper-thumbs">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="../img/rooms/№12/room12.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/rooms/№12/photo_2024-06-07_10-11-25.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/rooms/№12/photo_2024-06-07_10-13-04.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/rooms/№12/photo_2024-06-07_10-13-13.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <button id="openModalVideo" class="review-video-btn">
+                <a href="#">Видеообзор Номера 12</a>
+            </button>
+        </div>
+        <div class="swiper-content">
+            <div class="reserve-action">
+                <button class="reserve-btn tel">
+                    <a href="tel:+79900081499">Забронировать</a>
+                </button>
+                <button id="openModal" class="reserve-btn tel-pk">
+                    <a href="#">Забронировать</a>
+
+                </button>
+
+
+                <button class="write-btn">
+                    <a href="https://vk.ru/im/convo/-226232248?entrypoint=community_page&tab=all" target="_blank" rel="noopener noreferrer">Написать в  <img src="../icon/i-vk.png" alt="Vk"></a>
+                </button>
+            </div>
+            <h2 class="number">Номер 12</h2>
+            <h2>Трёхместный номер Делюкс</h2>
+            <p class="p-content"> <span>Удобный номер Делюкс</span> на 3-х человек с
+                видом на море. Находится на 2 этаже. Балкон с видом на пляж, со столиком
+                и стульями. В номере есть все необходимое для удобного проживания.
+                Двуспальная кровать, небольшой раскладной диван, постельное бельё,
+                шкаф, тумбочка. Санузел с душем, круглосуточно холодная и горячая вода,
+                полотенца. В номере имеется кондиционер, телевизор, wi-fi. Мини-кухня
+                с холодильником, микроволновкой, электрочайником и необходимой посудой. </p>
+            <div class="slip-place">
+                <h3>Спальные места</h3>
+                <p class="slip-name">2 кровати, 3 основных спальных места</p>
+                <div class="slip-content">
+                    <div class="slip-content-col1 col">
+                        <div class="slip-content-col1-row1 row">
+                            <img src="../icon/двухспальная.png" alt="">
+                            <h4>x</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="slip-content-col1-row2 row">
+                            <p>Двухспальная кровать</p>
+                        </div>
+                    </div>
+                    <div class="slip-content-col2 col">
+                        <div class="slip-content-col2-row1 row">
+                            <img src="../icon/диван.png" alt="">
+                            <h4>x</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="slip-content-col2-row2 row">
+                            <p>Раскладной диван</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="conveniences">
+                <h3>Основные удобства</h3>
+                <div class="row">
+                    <div class="col">
+                        <img class="udobstva" src="../icon/кондиционер.png" alt="">
+                        <p>Кондиционер</p>
+                    </div>
+                    <div class="col">
+                        <img class="udobstva" src="../icon/wi-fi.png" alt="">
+                        <p>Беспроводной интернет Wi-Fi</p>
+                    </div>
+                    <div class="col">
+                        <img class="udobstva" src="../icon/тв.png" alt="">
+                        <p>Телевизор</p>
+                    </div>
+                    <div class="col">
+                        <img class="udobstva" src="../icon/чайник.png" alt="">
+                        <p>Электрический чайник</p>
+                    </div>
+                    <div class="col">
+                        <img class="udobstva" src="../icon/микроволновка.png" alt="">
+                        <p>Микроволновка</p>
+                    </div>
+                    <div class="col">
+                        <img class="udobstva" src="../icon/холодильник.png" alt="">
+                        <p>Холодильник</p>
+                    </div>
+                </div>
+                <div class="blok row">
+                    <div class="kitchen-blok row">
+                        <div class="kitchen col">
+                            <img class="udobstva" src="../icon/кухонная%20зона.png" alt="">
+                            <p>Кухонная зона:</p>
+                        </div>
+                        <div class="kitchen-content">
+                            <div class="col">
+                                <p>- Микроволновка</p>
+                            </div>
+                            <div class="col">
+                                <p>- Холодильник</p>
+                            </div>
+                            <div class="col">
+                                <p>- Электрический чайник</p>
+                            </div>
+                            <div class="col">
+                                <p>- Посуда</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bathroom-blok row">
+                        <div class="bathroom col">
+                            <img class="udobstva" src="../icon/ванная%20комната.png" alt="">
+                            <p>Ванная комната:</p>
+                        </div>
+                        <div class="bathroom-content">
+                            <div class="col">
+                                <p>- Туалет</p>
+                            </div>
+                            <div class="col">
+                                <p>- Душ</p>
+                            </div>
+                            <div class="col">
+                                <p>- Полотенца</p>
+                            </div>
+                            <div class="col">
+                                <p>- Туалетные принадлежности</p>
+                            </div>
+                            <div class="col">
+                                <p>- Фен</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer class="footer">
+    <div class="container section-container">
+        <div class="footer-container">
+            <div class="col">
+                <div class="col-content">
+                    <a href="#" class="footer-logo">Карамель</a>
+                    <p>Комфортабельные номера, частный пляж с зонтиками и лежаками, бассейн с подогревом,
+                        охраняемая парковка, мангальная зона</p>
+                    <div class="social-links">
+                        <i><img src="../icon/telegram_icon_130816.png" alt="Telegram"></i>
+                        <i><img src="../icon/i-vk.png" alt="VK"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Быстрые ссылки</h3>
+                <ul class="links">
+                    <li><a href="#"><img src="../icon/arrow_right_15600.png" alt="->"><span>Главная</span></a></li>
+                    <li><a href="#"><img src="../icon/arrow_right_15600.png" alt="->"><span>О нас</span></a></li>
+                    <li><a href="#"><img src="../icon/arrow_right_15600.png" alt="->"><span>Номера</span></a></li>
+                    <li><a href="#"><img src="../icon/arrow_right_15600.png" alt="->"><span>Галерея</span></a></li>
+                    <li><a href="#"><img src="../icon/arrow_right_15600.png" alt="->"><span>Правила</span></a></li>
+                    <li><a href="#"><img src="../icon/arrow_right_15600.png" alt="->"><span>Новости</span></a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Контакты</h3>
+                <ul class="links">
+                    <li><a href="#"><img src="../icon/phone_blue_35145.png" alt="->"><span>+7 (990)-026-50-08</span></a></li>
+                    <li><a href="#"><img src="../icon/mail_message_16736.png" alt="->"><span>e.me4eva@yandex.ru</span></a></li>
+                    <li><a href="#"><img src="../icon/multimedia_seo_web_global_globe_earth_worldwide_internet_icon_258903.png" alt="->"><span>karamel.ru</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="../js/burger-menu.js"></script>
+<script src="../js/room.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
