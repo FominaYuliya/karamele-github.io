@@ -934,12 +934,12 @@ display: flex;
 }
 /* Стили для кнопки закрытия */
 .close-btn-video {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
     color: #355be5;
     cursor: pointer;
     transition: color 0.2s;
-    margin-left: -40px;
+    margin-left: -50px;
     z-index: 3;
 }
 
