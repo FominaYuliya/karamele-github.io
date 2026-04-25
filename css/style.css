@@ -939,7 +939,7 @@ display: flex;
     color: #355be5;
     cursor: pointer;
     transition: color 0.2s;
-    margin-left: -50px;
+    margin-left: -25px;
     z-index: 3;
 }
 
