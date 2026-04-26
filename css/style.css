@@ -129,6 +129,7 @@ main{
     display: flex;
     justify-content: center;
     flex-basis: 40%;
+
 }
 .header_logo_img{
     display: block;
@@ -146,7 +147,7 @@ main{
     margin-top: 2%;
 }
 .header_links{
-    margin: 0 0 5% 0;
+    margin: 0 0 1% 0;
 }
 .action-header_link{
     color: #600909;
@@ -154,6 +155,15 @@ main{
 }
 .action-header_button{
     font-size: inherit;
+}
+.action-header_button .a{
+    color: #6c0a0a;
+    padding: 0 35%;
+}
+.action-header_button .a:hover{
+    color: bisque;
+    transition: 0.3s;
+
 }
 .menu_link{
     color: #600909;
@@ -347,7 +357,7 @@ h2{
 }
 .about-name{
     color: #f6780f;
-    font-size: 3vh;
+    font-size: 150%;
 }
 .map{
     display: flex;
@@ -374,12 +384,13 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 5% 5%;
+    padding: 0 5% 1%;
 
 }
 .rooms-row{
     display: flex;
     justify-content: space-between;
+
 }
 .rooms-card{
     margin: 3% 5%;
@@ -565,7 +576,7 @@ i img, li a img{
     color: #e19f6c;
 }
 .col-content p{
-    font-size: 1.1vw;
+    font-size: 1.5vw;
     color: #a66429;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -590,7 +601,7 @@ i img, li a img{
 }
 .col .links li a{
     color: #a66429;
-    font-size: 1.1vw;
+    font-size: 1.5vw;
     display: flex;
     align-items: center;
 }
@@ -936,7 +947,7 @@ display: flex;
 .close-btn-video {
     font-size: 36px;
     font-weight: bold;
-    color: #355be5;
+    color: #0d42ef;
     cursor: pointer;
     transition: color 0.2s;
     margin-left: -20px;
@@ -996,6 +1007,51 @@ display: flex;
 .reserve-list a{
     color: #ff6f00;
     font-size: 120%;
+}
+/*----------КОНТАКТЫ--------------*/
+.name-contact{
+    text-align: center;
+}
+.adres{
+    color: #600909;
+    font-size: 130%;
+    margin-bottom: 2%;
+}
+.contact-info{
+    color: #600909;
+    font-size: 120%;
+    margin-top: 3%;
+}
+.mb{
+    margin-bottom: 5%;
+}
+
+/*-----------НОМЕРА-------------------------------------*/
+.category{
+    font-size: 2.2vw;
+    color: #0f67e1;
+    text-align: center;
+    margin-top: 2%;
+}
+.num{
+    flex-basis: 23%;
+    min-width: 200px;
+
+
+}
+.rooms-row-num{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*----------О НАС----------------------------------------*/
+.about-page{
+    margin-bottom: 2%;
+}
+.adres-about{
+    font-size: 150%;
+    text-indent: 3%;
+    color: #ef9014;
 }
 /*-----------МЕДИА-ЗАПРОСЫ-------------------------------*/
 @media (max-width: 767px){
