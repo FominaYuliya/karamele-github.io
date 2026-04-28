@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../icon/adres.png"/>
     <link
             rel="stylesheet"
@@ -75,77 +75,95 @@
 <main>
     <div class="container">
         <h2 class="name-contact">База отдыха "Карамель"</h2>
-        <h2 class="category">Двухместные номера Стандарт</h2>
-        <div class="rooms">
-            <div class="rooms-row-num">
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room11.jpg" alt="Номер 11">
-                    <div class="overlay">
-                        <h3>№ 11 <br> Cтандарт на 2x человек</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room11.html">Подробнее</a>
-                        </button>
-                    </div>
+        <div class="row-list">
+            <ul class="list-filter">
+                <li class="list_item active-category" data-id = "all">Все</li>
+                <li class="list_item" data-id = "standart2">Двухместный Стандарт</li>
+                <li class="list_item" data-id = "standart3">Трехместный Стандарт</li>
+                <li class="list_item" data-id = "standart4">Четырехместный Стандарт</li>
+                <li class="list_item" data-id = "delux3">Трехместный Делюкс</li>
+                <li class="list_item" data-id = "delux4">Четырехместный Делюкс</li>
+                <li class="list_item" data-id = "lux">Четырехместный Люкс</li>
+                <li class="list_item" data-id = "family">Двухкомнатный номер</li>
+            </ul>
+        </div>
+
+        <div class="blocks_item standart2">
+    <h2 class="category">Двухместные номера Стандарт</h2>
+    <div class="rooms">
+        <div class="rooms-row-num">
+            <div class="rooms-card num">
+                <img class="room-img" src="../img/room11.jpg" alt="Номер 11">
+                <div class="overlay">
+                    <h3>№ 11 <br> Cтандарт на 2x человек</h3>
+                    <button class="action-header_button btn">
+                        <a href="./room11.html">Подробнее</a>
+                    </button>
                 </div>
             </div>
         </div>
-        <h2 class="category">Трехместные номера Стандарт</h2>
-        <div class="rooms">
-            <div class="rooms-row-num">
-                <div class="rooms-card  num">
-                    <img class="room-img" src="../img/room1.jpg" alt="Номер 1">
-                    <div class="overlay">
-                        <h3>№ 1 <br> Cтандарт на 3 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room1.html">Подробнее</a>
-                        </button>
+    </div>
+</div>
+        <div class="blocks_item standart3">
+            <h2 class="category">Трехместные номера Стандарт</h2>
+            <div class="rooms">
+                <div class="rooms-row-num">
+                    <div class="rooms-card  num">
+                        <img class="room-img" src="../img/room1.jpg" alt="Номер 1">
+                        <div class="overlay">
+                            <h3>№ 1 <br> Cтандарт на 3 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room1.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="rooms-card  num">
-                    <img class="room-img" src="../img/room3.jpg" alt="Номер 3">
-                    <div class="overlay">
-                        <h3>№3 <br> Cтандарт на 3 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room3.html">Подробнее</a>
-                        </button>
+                    <div class="rooms-card  num">
+                        <img class="room-img" src="../img/room3.jpg" alt="Номер 3">
+                        <div class="overlay">
+                            <h3>№3 <br> Cтандарт на 3 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room3.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room6.jpg" alt="Номер 6">
-                    <div class="overlay">
-                        <h3>№ 6 <br> Cтандарт на 3 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room6.html">Подробнее</a>
-                        </button>
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room6.jpg" alt="Номер 6">
+                        <div class="overlay">
+                            <h3>№ 6 <br> Cтандарт на 3 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room6.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
 
-                <div class="rooms-card  num">
-                    <img class="room-img" src="../img/room7.jpg" alt="Номер 7">
-                    <div class="overlay">
-                        <h3>№ 7 <br> Cтандарт на 3 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room7.html">Подробнее</a>
-                        </button>
+                    <div class="rooms-card  num">
+                        <img class="room-img" src="../img/room7.jpg" alt="Номер 7">
+                        <div class="overlay">
+                            <h3>№ 7 <br> Cтандарт на 3 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room7.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room9.jpg" alt="Номер 9">
-                    <div class="overlay">
-                        <h3>№9 <br> Cтандарт на 3 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room9.html">Подробнее</a>
-                        </button>
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room9.jpg" alt="Номер 9">
+                        <div class="overlay">
+                            <h3>№9 <br> Cтандарт на 3 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room9.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-        <h2 class="category">Четырехместные номера Стандарт</h2>
-        <div class="rooms">
-            <div class="rooms-row-num">
-                <div class="rooms-card num">
+        <div class="blocks_item standart4">
+            <h2 class="category">Четырехместные номера Стандарт</h2>
+            <div class="rooms">
+                <div class="rooms-row-num">
+                    <div class="rooms-card num">
                         <img class="room-img" src="../img/room2.jpg" alt="Номер 2">
                         <div class="overlay">
                             <h3>№ 2 <br> Cтандарт на 4 человека</h3>
@@ -153,8 +171,8 @@
                                 <a href="./room2.html">Подробнее</a>
                             </button>
                         </div>
-                </div>
-                <div class="rooms-card num">
+                    </div>
+                    <div class="rooms-card num">
                         <img class="room-img" src="../img/room4.jpg" alt="Номер 4">
                         <div class="overlay">
                             <h3>№ 4 <br> Cтандарт на 4 человека</h3>
@@ -162,115 +180,130 @@
                                 <a href="./room4.html">Подробнее</a>
                             </button>
                         </div>
-                </div>
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room5.jpg" alt="Номер 5">
-                    <div class="overlay">
-                        <h3>№ 5 <br> Cтандарт на 4 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room5.html">Подробнее</a>
-                        </button>
                     </div>
-                </div>
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room8.jpg" alt="Номер 8">
-                    <div class="overlay">
-                        <h3>№ 8 <br> Cтандарт на 4 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room8.html">Подробнее</a>
-                        </button>
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room5.jpg" alt="Номер 5">
+                        <div class="overlay">
+                            <h3>№ 5 <br> Cтандарт на 4 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room5.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room10.jpg" alt="Номер 10">
-                    <div class="overlay">
-                        <h3>№ 10 <br> Cтандарт на 4 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room10.html">Подробнее</a>
-                        </button>
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room8.jpg" alt="Номер 8">
+                        <div class="overlay">
+                            <h3>№ 8 <br> Cтандарт на 4 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room8.html">Подробнее</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room10.jpg" alt="Номер 10">
+                        <div class="overlay">
+                            <h3>№ 10 <br> Cтандарт на 4 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room10.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <h2 class="category">Трехместные номера Делюкс (с видом на море)</h2>
-        <div class="rooms">
-            <div class="rooms-row-num">
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room12.jpg" alt="Номер 12">
-                    <div class="overlay">
-                        <h3>№ 12 <br> Делюкс на 3 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room12.html">Подробнее</a>
-                        </button>
+        <div class="blocks_item delux3">
+            <h2 class="category">Трехместные номера Делюкс (с видом на море)</h2>
+            <div class="rooms">
+                <div class="rooms-row-num">
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room12.jpg" alt="Номер 12">
+                        <div class="overlay">
+                            <h3>№ 12 <br> Делюкс на 3 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room12.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room13.jpg" alt="Номер 13">
-                    <div class="overlay">
-                        <h3>№ 13 <br> Делюкс на 3 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room13.html">Подробнее</a>
-                        </button>
+            </div>
+        </div>
+        <div class="blocks_item delux4">
+            <h2 class="category">Четырехместные номера Делюкс (с видом на море)</h2>
+            <div class="rooms">
+                <div class="rooms-row-num">
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room13.jpg" alt="Номер 13">
+                        <div class="overlay">
+                            <h3>№ 13 <br> Делюкс на 4 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room13.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room14.jpg" alt="Номер 14">
-                    <div class="overlay">
-                        <h3>№ 14 <br> Делюкс на 3 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room12.html">Подробнее</a>
-                        </button>
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room14.jpg" alt="Номер 14">
+                        <div class="overlay">
+                            <h3>№ 14 <br> Делюкс на 4 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room12.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room15.jpg" alt="Номер 15">
-                    <div class="overlay">
-                        <h3>№ 15 <br> Делюкс на 3 человека</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room15.html">Подробнее</a>
-                        </button>
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room15.jpg" alt="Номер 15">
+                        <div class="overlay">
+                            <h3>№ 15 <br> Делюкс на 4 человека</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room15.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-        <h2 class="category">Четырехместный номер Люкс (с видом на море)</h2>
-        <div class="rooms">
-            <div class="rooms-row-num">
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room16.jpg" alt="Номер 16">
-                    <div class="overlay">
-                        <h3>№ 14 <br> Люкс на 4-х человек</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room16.html">Подробнее</a>
-                        </button>
+        <div class="blocks_item lux">
+            <h2 class="category">Четырехместный номер Люкс (с видом на море)</h2>
+            <div class="rooms">
+                <div class="rooms-row-num">
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room16.jpg" alt="Номер 16">
+                        <div class="overlay">
+                            <h3>№ 14 <br> Люкс на 4-х человек</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room16.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <h2 class="category">Двухкомнатные номера (с видом на залив и двор)</h2>
-        <div class="rooms">
-            <div class="rooms-row-num">
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room17.jpg" alt="Номер 17">
-                    <div class="overlay">
-                        <h3>№ 17 <br>Двухкомнатный (семейный) номер</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room17.html">Подробнее</a>
-                        </button>
+        <div class="blocks_item family">
+            <h2 class="category">Двухкомнатные номера (с видом на залив и двор)</h2>
+            <div class="rooms">
+                <div class="rooms-row-num">
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room17.jpg" alt="Номер 17">
+                        <div class="overlay">
+                            <h3>№ 17 <br>Двухкомнатный (семейный) номер</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room17.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="rooms-card num">
-                    <img class="room-img" src="../img/room18.jpg" alt="Номер 18">
-                    <div class="overlay">
-                        <h3>№ 18 <br>Двухкомнатный (семейный) номер</h3>
-                        <button class="action-header_button btn">
-                            <a href="./room18.html">Подробнее</a>
-                        </button>
+                    <div class="rooms-card num">
+                        <img class="room-img" src="../img/room18.jpg" alt="Номер 18">
+                        <div class="overlay">
+                            <h3>№ 18 <br>Двухкомнатный (семейный) номер</h3>
+                            <button class="action-header_button btn">
+                                <a href="./room18.html">Подробнее</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
     </div>
 
@@ -317,5 +350,6 @@
 <script src="../js/burger-menu.js"></script>
 <script src="../js/room.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/filterRooms.js"></script>
 </body>
 </html>
