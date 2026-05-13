@@ -1317,6 +1317,82 @@ display: flex;
         transition: top 0.3s;
         font-size: 14px;
     }
+    .contact li span{
+        font-size:  130%;
+    }
+    .action-header_button{
+        font-size: 150%;
+        margin-top: 2%;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    .about-name {
+        font-size: 130%;
+    }
+
+    .rooms-row{
+        flex-wrap: wrap;
+    }
+    .card img {
+        width: 50%;
+    }
+    .map p {
+        font-size: 2.5vw;
+    }
+
+    .cardR-img {
+        align-items: start;
+    }
+    .cardR p {
+        font-size: 2.5vw;
+    }
+    .col-content a.footer-logo {
+        font-size: 3vw;
+
+    }
+    .col-content{
+        text-align: center;
+    }
+    .social-links{
+        justify-content: center;
+    }
+    .col-content p {
+        font-size: 2.5vw;
+    }
+    .col{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .col .links li a {
+
+        font-size: 2.5vw;
+    }
+    .links-container{
+        margin-left: 40%;
+    }
+    .col h3 {
+        font-size: 3vw;
+    }
+    .col .l-container{
+        margin-left: 35%;
+    }
+    #scrollTopBtn {
+        right: 10px;
+    }
+
+    .about {
+        text-indent: 5%;
+        font-size: 3vw;
+    }
+    .adres-about {
+        font-size: 120%;}
+    .pool-rules {
+        font-size: 3vw;
+    }
+    .post-image {
+        max-width: 100%;
+    }
     .nav_menu.active a{
         color: #efbc91;
         margin: 0 10%;
@@ -1358,10 +1434,10 @@ display: flex;
         padding: 0;
     }
     .overlay h3{
-        font-size: 1.2vw;
+        font-size: 3.5vw;
     }
     .overlay .btn{
-        font-size: 1.2vw;
+        font-size: 3.5vw;
         padding: 5px;
     }
     .tel{
